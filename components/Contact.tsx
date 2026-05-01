@@ -62,7 +62,8 @@ export default function Contact() {
 
         <div className="mt-8 flex flex-col items-start justify-between gap-2 border-t border-line pt-6 font-mono text-[10px] tracking-widest text-dim sm:flex-row sm:items-center md:mt-10">
           <span>© {new Date().getFullYear()} ARYAN HIRLEKAR</span>
-          <span> · BOSTON, MA</span>
+          <span>
+             · BOSTON, MA</span>
         </div>
       </motion.div>
     </Section>

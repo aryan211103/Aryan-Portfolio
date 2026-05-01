@@ -5,15 +5,15 @@ import { useState } from "react";
 import { useActiveSection } from "@/lib/useActiveSection";
 
 const links = [
-  { id: "About", label: "About" },
-  { id: "Work", label: "Work" },
-  { id: "Experience", label: "Experience" },
-  { id: "Skills", label: "Skills" },
-  { id: "Contact", label: "Contact" },
+  { id: "about", label: "About" },
+  { id: "work", label: "Work" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
+  { id: "contact", label: "Contact" },
 ];
 
 export default function Nav() {
-  const active = useActiveSection(["top", "About", "Work", "Experience", "Skills", "Contact"]);
+  const active = useActiveSection(["top", "about", "work", "experience", "skills", "contact"]);
   const [open, setOpen] = useState(false);
 
   const isActive = (id: string) => active === id;
