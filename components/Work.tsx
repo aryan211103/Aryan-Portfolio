@@ -27,9 +27,20 @@ export default function Work() {
                 {p.title}
               </h3>
               <p className="mt-3 text-base text-accent md:text-lg">{p.tagline}</p>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted md:text-[15px]">
-                {p.description}
-              </p>
+              {p.bullets ? (
+                <ul className="mt-6 max-w-2xl space-y-2.5">
+                  {p.bullets.map((b, i) => (
+                    <li key={i} className="flex gap-3 text-base leading-relaxed text-muted md:text-[15px]">
+                      <span className="mt-[0.35em] h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted md:text-[15px]">
+                  {p.description}
+                </p>
+              )}
 
               <div className="mt-8 flex flex-wrap gap-2">
                 {p.stack.map((s) => (

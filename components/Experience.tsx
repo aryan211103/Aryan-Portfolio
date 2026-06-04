@@ -10,10 +10,9 @@ const items = [
     when: "Jun 2024 — Sep 2024",
     where: "Pune, India",
     bullets: [
-      "Generated 100+ questionnaires from Sanskrit texts using PyPDF2, HuggingFace Transformers, and PyTorch",
-      "Built sentence embeddings with transformer models hitting 85% semantic similarity accuracy",
-      "Authored a literature review on multilingual LLMs (mBERT, LLaMA, GPT-3/4, XLM-R)",
-      "Presented findings on Sanskrit LLMs to 10+ mentors",
+      "Fine-tuned BERT on a 15,000-sample low-resource corpus, lifting multi-class classification accuracy from 71% to 88% across 6 categories",
+      "Built an NLP pipeline to extract, clean, and translate text from large document corpora, generating structured Q&A pairs with GPT-3.5",
+      "Benchmarked multilingual models (mBERT, LLaMA, XLM-R, GPT-4) on low-resource Sanskrit text, identifying mBERT as the top performer for downstream classification",
     ],
   },
   {
