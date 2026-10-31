@@ -13,6 +13,7 @@ const items = [
       "Built the frontend generation agent for a multi agent SDLC platform on AWS Bedrock AgentCore, with build time validation gates that verify AI generated React, FastAPI, and Postgres code across 50+ generated applications",
       "Deployed the agent with Docker, ECR, and S3 artifact handoff, replacing a 17KB+ API spec embedded in every prompt with a 32 character pointer reference and prompt caching",
       "Built monitoring, analysis, root cause, and ticket agents in a 9 agent LangGraph incident pipeline that detects AWS anomalies, runs RCA via Bedrock Claude Sonnet 4, raises incidents in ServiceNow and Jira, and remediates faults after human approval",
+      "Implemented ticket enrichment for unseen incident types by routing unknown anomalies through an AgentCore web search gateway, automatically surfacing remediation steps and appending them as structured work notes in the ServiceNow ticket",
     ],
     stack: ["Python", "AWS Bedrock", "AgentCore", "LangGraph", "FastAPI", "React", "Docker", "CloudWatch", "MCP"],
   },
