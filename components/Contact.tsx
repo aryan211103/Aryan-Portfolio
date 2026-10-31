@@ -19,6 +19,11 @@ const links = [
     href: "https://www.linkedin.com/in/aryan-hirlekar-4a48aa248/",
     display: "linkedin.com/in/aryan-hirlekar",
   },
+  {
+    label: "Resume",
+    href: "/Aryan_Hirlekar_Resume.pdf",
+    display: "Download PDF",
+  },
 ];
 
 export default function Contact() {

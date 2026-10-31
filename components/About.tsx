@@ -14,7 +14,7 @@ export default function About() {
         className="grid gap-12 md:grid-cols-12 md:gap-16"
       >
         <p className="text-xl leading-relaxed text-ink md:col-span-8 md:text-2xl lg:text-3xl">
-        I'm a graduate student at Northeastern's Khoury College of Computer Science, focused on machine learning and the distributed systems that run it in production. Before this, I have spent a summer at Tech Mahindra's Maker's Lab building transformer-based NLP pipelines and evaluating how well large language models handle low-resource languages like Sanskrit. I also have a research paper published in IEEE Xplore which I presented at ICCCNT 2025 on building recommendation systems using XGBoost and collaborative filtering.
+        I'm a graduate student at Northeastern's Khoury College of Computer Science, currently an AI/ML intern at Juno Labs building LLM agent systems on AWS: a code generation pipeline that turns plain text briefs into full stack apps, and an incident platform that detects, diagnoses, and remediates cloud faults. Before this, I spent a summer at Tech Mahindra's Maker's Lab building NLP pipelines and fine tuning transformer models for low resource languages. My research on recommendation systems using XGBoost and collaborative filtering was presented at IEEE ICCCNT 2025.
         </p>
         <div className="space-y-6 md:col-span-4">
           <div>
@@ -29,7 +29,7 @@ export default function About() {
           </div>
           <div>
             <p className="font-mono text-[11px] tracking-widest text-dim">AVAILABLE</p>
-            <p className="mt-2 text-base text-ink/80">May 2026 — open to remote &amp; on-site</p>
+            <p className="mt-2 text-base text-ink/80">Summer 2027, open to remote and on site</p>
           </div>
         </div>
       </motion.div>

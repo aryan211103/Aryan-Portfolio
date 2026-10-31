@@ -17,10 +17,23 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteTitle = "Aryan Hirlekar — Software Engineer";
+const siteDescription =
+  "MS Computer Science at Northeastern (May 2027). Building agent systems, backend services, and ML pipelines on AWS that are fast, reliable, and production ready. Seeking full time Software Engineer roles starting Summer 2027.";
+
 export const metadata: Metadata = {
-  title: "Aryan Hirlekar — Portfolio",
-  description:
-    "MS Computer Science at Northeastern. Building distributed systems and ML at the intersection of scale and intelligence.",
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export const viewport: Viewport = {

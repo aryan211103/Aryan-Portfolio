@@ -34,10 +34,10 @@ export default function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg md:mt-8 md:text-xl">
           Building
-          <span className="text-ink"> backend systems </span>
-          and
+          <span className="text-ink"> agent systems</span>,
+          <span className="text-ink"> backend services</span>, and
           <span className="text-ink"> ML pipelines </span>
-          that are fast, reliable, and production-ready.
+          on AWS that are fast, reliable, and production ready.
           </p>
         </motion.div>
 
@@ -52,10 +52,10 @@ export default function Hero() {
             CURRENTLY
           </p>
           <p className="mt-4 text-sm text-ink/80 md:text-base">
-            MS Computer Science · Northeastern University
+            MS Computer Science · Northeastern University (May 2027)
           </p>
           <p className="mt-1 text-sm text-muted md:text-base">
-            Open to Summer & Fall 2026 Internships and Co-ops
+            Seeking full time Software Engineer roles starting Summer 2027
           </p>
         </motion.div>
       </div>

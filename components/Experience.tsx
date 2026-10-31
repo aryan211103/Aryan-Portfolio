@@ -5,11 +5,24 @@ import Section from "./Section";
 
 const items = [
   {
-    role: "AI Intern",
+    role: "AI/ML Intern",
+    org: "Resolve Tech Solutions / Juno Labs AI",
+    when: "Jul 2026 — Dec 2026",
+    where: "Addison, TX",
+    bullets: [
+      "Built the frontend generation agent for a multi agent SDLC platform on AWS Bedrock AgentCore, with build time validation gates that verify AI generated React, FastAPI, and Postgres code across 50+ generated applications",
+      "Deployed the agent with Docker, ECR, and S3 artifact handoff, replacing a 17KB+ API spec embedded in every prompt with a 32 character pointer reference and prompt caching",
+      "Built monitoring, analysis, root cause, and ticket agents in a 9 agent LangGraph incident pipeline that detects AWS anomalies, runs RCA via Bedrock Claude Sonnet 4, raises incidents in ServiceNow and Jira, and remediates faults after human approval",
+    ],
+    stack: ["Python", "AWS Bedrock", "AgentCore", "LangGraph", "FastAPI", "React", "Docker", "CloudWatch", "MCP"],
+  },
+  {
+    role: "AI/ML Intern",
     org: "Tech Mahindra · Maker's Lab",
     when: "Jun 2024 — Sep 2024",
     where: "Pune, India",
     bullets: [
+      "Built and deployed a sentence embedding microservice in PyTorch achieving 85% semantic similarity accuracy",
       "Fine-tuned BERT on a 15,000-sample low-resource corpus, lifting multi-class classification accuracy from 71% to 88% across 6 categories",
       "Built an NLP pipeline to extract, clean, and translate text from large document corpora, generating structured Q&A pairs with GPT-3.5",
       "Benchmarked multilingual models (mBERT, LLaMA, XLM-R, GPT-4) on low-resource Sanskrit text, identifying mBERT as the top performer for downstream classification",
@@ -22,7 +35,7 @@ const items = [
     where: "IEEE Xplore (in press)",
     bullets: [
       "Presented at the 16th International Conference on Computing, Communication and Networking Technologies",
-      "Accepted for publication in IEEE Xplore",
+      "Accepted for publication in IEEE Xplore (in press)",
     ],
     isPublication: true,
   },
@@ -63,6 +76,18 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+              {item.stack && (
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {item.stack.map((s) => (
+                    <span
+                      key={s}
+                      className="rounded-full border border-line px-3 py-1 font-mono text-[10px] tracking-wider text-ink/70"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </motion.div>
         ))}

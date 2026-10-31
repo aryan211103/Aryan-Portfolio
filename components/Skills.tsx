@@ -10,19 +10,26 @@ const groups = [
   },
   {
     label: "FRAMEWORKS",
-    items: ["Spring Boot", "React / Next.js", "Flask", "PyTorch", "TensorFlow", "LangChain"],
+    items: ["Spring Boot", "React", "Flask", "PyTorch", "FastAPI", "Node.js"],
+  },
+  {
+    label: "CLOUD & AI",
+    items: [
+      "AWS (Bedrock, AgentCore, CloudWatch, ECR, S3, SageMaker)",
+      "GCP Vertex AI",
+      "LangGraph",
+      "MCP",
+    ],
   },
   {
     label: "DISTRIBUTED SYSTEMS",
-    items: ["Apache Kafka", "Redis", "Docker", "Microservices", "REST APIs"],
+    items: ["Apache Kafka", "Redis", "Docker", "Microservices", "REST APIs", "OpenTelemetry", "Resilience4j"],
   },
   {
     label: "DATA & ML",
     items: [
       "PostgreSQL",
       "MongoDB",
-      "RAG Pipelines",
-      "MCP",
       "Sentence Embeddings",
       "Collaborative Filtering",
     ],

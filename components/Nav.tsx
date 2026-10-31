@@ -9,11 +9,13 @@ const links = [
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
+  { id: "awards", label: "Awards" },
+  { id: "resume", label: "Resume", href: "/Aryan_Hirlekar_Resume.pdf", external: true },
   { id: "contact", label: "Contact" },
 ];
 
 export default function Nav() {
-  const active = useActiveSection(["top", "about", "work", "experience", "skills", "contact"]);
+  const active = useActiveSection(["top", "about", "work", "experience", "skills", "awards", "contact"]);
   const [open, setOpen] = useState(false);
 
   const isActive = (id: string) => active === id;
@@ -41,7 +43,9 @@ export default function Nav() {
             return (
               <a
                 key={l.id}
-                href={`#${l.id}`}
+                href={l.href ?? `#${l.id}`}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noreferrer" : undefined}
                 className="group relative flex items-center gap-2 transition-colors"
               >
                 <span
@@ -103,7 +107,9 @@ export default function Nav() {
             {links.map((l, i) => (
               <motion.a
                 key={l.id}
-                href={`#${l.id}`}
+                href={l.href ?? `#${l.id}`}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noreferrer" : undefined}
                 onClick={() => setOpen(false)}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
