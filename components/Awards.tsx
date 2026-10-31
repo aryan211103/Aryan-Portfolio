@@ -8,6 +8,7 @@ const awards = [
     title: "1st Place, IBM SkillsBuild AI Builders Challenge",
     issuer: "IBM SkillsBuild",
     when: "May 2026",
+    href: "https://drive.google.com/file/d/1mvDDcZwpc-V5d-EQA_dv_wI6-pQl5ULE/view",
   },
   {
     title: "Model Context Protocol: Advanced Topics",
